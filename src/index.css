@@ -1,0 +1,60 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 221 83% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 221 83% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 221 83% 13%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 25% 27%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-poker-dark text-foreground;
+  }
+}
+
+.teen-patti-bg {
+  background-image: radial-gradient(circle, #1E3A8A 0%, #0F172A 100%);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.game-table {
+  background-color: theme('colors.poker.table');
+  border: 4px solid #873800;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
